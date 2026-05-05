@@ -3,115 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ron Solomon | Portfolio</title>
+  <title>Ron Solomon | AI Researcher</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <header class="hero">
-    <div class="hero-inner">
-      <h1 class="fade-in">Ron Solomon</h1>
-      <p class="fade-in delay-1">AI Researcher • AI Security • AI Agents</p>
-      <a class="linkedin-button fade-in delay-2" href="https://www.linkedin.com/in/ron-salomon96" target="_blank">Connect on LinkedIn</a>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">RS<span class="dot">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <a class="nav-cta" href="https://www.linkedin.com/in/ron-salomon96" target="_blank">LinkedIn →</a>
     </div>
-  </header>
+  </nav>
+
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <h1>Ron Solomon</h1>
+      <p class="hero-sub">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        AI Researcher pushing the frontier of intelligent systems — from multi-agent observability to LLM security.
+      </p>
+      <div class="hero-actions">
+        <a href="#research" class="btn-primary">View Research</a>
+        <a href="https://www.linkedin.com/in/ron-salomon96" target="_blank" class="btn-outline">Connect →</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
 
   <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        Hey, I’m <strong>Ron Solomon</strong>, a passionate AI researcher and Software Engineer. With a <strong>B.Sc. in Computer Science</strong> and an ongoing <strong>M.Sc. focused on AI agents and cybersecurity</strong>, I fuse theory with real-world innovation.
-        <br>
-        My work spans, <strong>LLMs</strong>, <strong>AI Agents Observabilty and Security</strong>, <strong>GenAI</strong>, <strong>NLP</strong>, <strong>Deep learning</strong> and <strong>Machine learning</strong>, aiming to push the frontier of intelligent systems.
-      </p>
-</section>
-    
-  </section>
-    <section class="projects">
-      <h2>Research Papers</h2>
-      <div class="project-grid">
 
-          <a class="project-card"
-             href="https://arxiv.org/abs/2508.12412"
-             target="_blank" rel="noopener noreferrer">
-            <h3>First Author of LumiMAS: A Comprehensive Framework for Real-Time Monitoring and Observability in Multi-Agent Systems</h3>
-            <p>Multi Agent Systems, Anomaly Detection, Observability</p>
-            <span class="tag">Accepted to AAMAS2026(A*)</span>
-            
-          
-          </a>
-        
-          <a class="project-card"
-             href=""
-             target="_blank" rel="noopener noreferrer">
-             
-            <h3>Co-Author of MAStitch: Unifying Local and Global Perspectives for Anomaly Detection in Multi-Agent Systems</h3>
-            <p>Multi Agent Systems, Anomaly Detection, Observability</p>
-            <span class="tag">Accepted to AAMAS2026(A*)</span>
-
-          </a>
+    <section class="about section-reveal" id="about">
+      <div class="section-label">01 — About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hey, I'm <strong>Ron Solomon</strong>, a passionate AI researcher and Software Engineer.
+            With a <strong>B.Sc. in Computer Science</strong> and an ongoing <strong>M.Sc. focused on AI agents and cybersecurity</strong>,
+            I fuse theory with real-world innovation.
+          </p>
+          <p>
+            My work spans <strong>LLMs</strong>, <strong>AI Agent Observability &amp; Security</strong>,
+            <strong>GenAI</strong>, <strong>NLP</strong>, <strong>Deep Learning</strong>, and
+            <strong>Machine Learning</strong> — aiming to push the frontier of intelligent systems.
+          </p>
+        </div>
+        <div class="about-skills">
+          <div class="skill-group">
+            <h4>Research Areas</h4>
+            <div class="chips">
+              <span class="chip">Multi-Agent Systems</span>
+              <span class="chip">AI Security</span>
+              <span class="chip">Observability</span>
+              <span class="chip">LLMs</span>
+              <span class="chip">Anomaly Detection</span>
+              <span class="chip">NLP</span>
+              <span class="chip">Adversarial ML</span>
+              <span class="chip">Red Teaming</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Agentic AI</h4>
+            <div class="chips">
+              <span class="chip cyan">LangGraph</span>
+              <span class="chip cyan">LangChain</span>
+              <span class="chip cyan">AutoGen</span>
+              <span class="chip cyan">CrewAI</span>
+              <span class="chip cyan">MCP</span>
+              <span class="chip cyan">RAG</span>
+              <span class="chip cyan">Hugging Face</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Data Science</h4>
+            <div class="chips">
+              <span class="chip purple">PyTorch</span>
+              <span class="chip purple">TensorFlow</span>
+              <span class="chip purple">Scikit-learn</span>
+              <span class="chip purple">Pandas</span>
+              <span class="chip purple">NumPy</span>
+              <span class="chip purple">Matplotlib</span>
+              <span class="chip purple">Jupyter</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Languages &amp; Tools</h4>
+            <div class="chips">
+              <span class="chip orange">Python</span>
+              <span class="chip orange">C++</span>
+              <span class="chip orange">Docker</span>
+              <span class="chip orange">FastAPI</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="projects">
-      <h2>Highlighted Projects</h2>
+
+    <section class="research section-reveal" id="research">
+      <div class="section-label">02 — Research</div>
+      <h2 class="section-title">Published Work</h2>
+      <div class="research-grid">
+
+        <a class="research-card" href="https://arxiv.org/abs/2508.12412" target="_blank" rel="noopener noreferrer">
+          <div class="research-meta">
+            <span class="research-badge first-author">First Author</span>
+            <span class="conference-badge">AAMAS 2026 (A*)</span>
+          </div>
+          <h3>LumiMAS: A Comprehensive Framework for Real-Time Monitoring and Observability in Multi-Agent Systems</h3>
+          <p>A real-time observability framework for multi-agent systems enabling anomaly detection and behavioral monitoring at scale.</p>
+          <div class="research-tags">
+            <span>Multi-Agent Systems</span>
+            <span>Anomaly Detection</span>
+            <span>Observability</span>
+          </div>
+          <span class="card-link">Read Paper →</span>
+        </a>
+
+        <a class="research-card no-link" href="" target="_blank" rel="noopener noreferrer">
+          <div class="research-meta">
+            <span class="research-badge co-author">Co-Author</span>
+            <span class="conference-badge">AAMAS 2026 (A*)</span>
+          </div>
+          <h3>MAStitch: Unifying Local and Global Perspectives for Anomaly Detection in Multi-Agent Systems</h3>
+          <p>A novel approach that unifies local and global perspectives for comprehensive anomaly detection across multi-agent architectures.</p>
+          <div class="research-tags">
+            <span>Multi-Agent Systems</span>
+            <span>Anomaly Detection</span>
+            <span>Observability</span>
+          </div>
+          <span class="card-link muted">Link Coming Soon</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="projects section-reveal" id="projects">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">Highlighted Work</h2>
       <div class="project-grid">
 
-          <a class="project-card"
-             href="https://github.com/RonSolomon96/Prompt-Injection-Guardrail"
-             target="_blank" rel="noopener noreferrer">
-            <h3>Prompt-Injection-Guardrail</h3>
-            <p>Prompt-Injection-Guardrail API</p>
+        <a class="project-card" href="https://github.com/RonSolomon96/Prompt-Injection-Guardrail" target="_blank" rel="noopener noreferrer">
+          <div class="project-icon">🛡️</div>
+          <h3>Prompt-Injection Guardrail</h3>
+          <p>Production-ready API for detecting and blocking prompt injection attacks in LLM applications.</p>
+          <div class="project-footer">
             <span class="tag">Python</span>
-          </a>
-        
-          <a class="project-card"
-             href="https://github.com/RonSolomon96/Rag-Based-Car-Agent"
-             target="_blank" rel="noopener noreferrer">
-            <h3>RAG Car Expert Agent</h3>
-            <p>Agent that answers car-related queries using RAG.</p>
+            <span class="card-link">View →</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/RonSolomon96/Rag-Based-Car-Agent" target="_blank" rel="noopener noreferrer">
+          <div class="project-icon">🚗</div>
+          <h3>RAG Car Expert Agent</h3>
+          <p>Intelligent agent answering car-related queries with retrieval-augmented generation for accurate responses.</p>
+          <div class="project-footer">
             <span class="tag">Python</span>
-          </a>
-        
-          <a class="project-card"
-             href="https://github.com/RonSolomon96/LLM-Based-Agent-Chatbot"
-             target="_blank" rel="noopener noreferrer">
-            <h3>LLM Agent Chatbot</h3>
-            <p>LangGraph-powered agent with tool usage.</p>
+            <span class="card-link">View →</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/RonSolomon96/LLM-Based-Agent-Chatbot" target="_blank" rel="noopener noreferrer">
+          <div class="project-icon">🤖</div>
+          <h3>LLM Agent Chatbot</h3>
+          <p>LangGraph-powered conversational agent with dynamic tool usage and multi-step reasoning.</p>
+          <div class="project-footer">
             <span class="tag">Python</span>
-          </a>
-        
-          <a class="project-card"
-             href="https://github.com/RonSolomon96/LLM-based-drone-voice-control-"
-             target="_blank" rel="noopener noreferrer">
-            <h3>LLM Drone Voice Control</h3>
-            <p>Real-time drone control using LLMs and voice.</p>
+            <span class="card-link">View →</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/RonSolomon96/LLM-based-drone-voice-control-" target="_blank" rel="noopener noreferrer">
+          <div class="project-icon">🚁</div>
+          <h3>LLM Drone Voice Control</h3>
+          <p>Real-time drone control system using LLMs and voice recognition for natural language commands.</p>
+          <div class="project-footer">
             <span class="tag">Python</span>
-          </a>
-        
-          <a class="project-card"
-             href="https://github.com/RonSolomon96/PLANTITPROJECT"
-             target="_blank" rel="noopener noreferrer">
-            <h3>PlantIt</h3>
-            <p>Smart plant care app using IoT and sensors.</p>
+            <span class="card-link">View →</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/RonSolomon96/PLANTITPROJECT" target="_blank" rel="noopener noreferrer">
+          <div class="project-icon">🌱</div>
+          <h3>PlantIt</h3>
+          <p>Smart plant care application leveraging IoT sensors for automated monitoring and care recommendations.</p>
+          <div class="project-footer">
             <span class="tag">Python</span>
-          </a>
-        
-          <a class="project-card"
-             href="https://github.com/RonSolomon96/Anomaly-Detector"
-             target="_blank" rel="noopener noreferrer">
-            <h3>Anomaly Detector</h3>
-            <p>Time series anomaly detection in C++.</p>
+            <span class="card-link">View →</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/RonSolomon96/Anomaly-Detector" target="_blank" rel="noopener noreferrer">
+          <div class="project-icon">📊</div>
+          <h3>Anomaly Detector</h3>
+          <p>High-performance time series anomaly detection engine built in C++ for real-time data streams.</p>
+          <div class="project-footer">
             <span class="tag">C++</span>
-          </a>
+            <span class="card-link">View →</span>
+          </div>
+        </a>
+
       </div>
     </section>
+
   </main>
 
   <footer>
-    <p><a href="https://www.linkedin.com/in/ron-salomon96" target="_blank">LinkedIn</a></p>
+    <div class="footer-inner">
+      <span class="nav-logo">RS<span class="dot">.</span></span>
+      <p>Built with passion. Always exploring what's next.</p>
+      <a href="https://www.linkedin.com/in/ron-salomon96" target="_blank">LinkedIn</a>
+    </div>
   </footer>
-<script defer src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
