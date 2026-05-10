@@ -124,6 +124,12 @@ h1, h2, h3, h4 { font-weight: 700; margin: 0; }
   border-color: var(--cyan);
 }
 
+.nav-email {
+  font-size: 0.875rem;
+  color: var(--text-muted, #94a3b8);
+  white-space: nowrap;
+}
+
 /* ============================================
    HERO
    ============================================ */
@@ -681,6 +687,14 @@ footer a {
 }
 
 footer a:hover { color: white; }
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* ============================================
    RESPONSIVE
