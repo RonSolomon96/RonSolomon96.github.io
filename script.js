@@ -10,7 +10,6 @@ window.addEventListener('scroll', () => {
 // TYPEWRITER
 // ============================================
 const phrases = [
-  'AI Researcher',
   'AI Security',
   'Agentic AI',
 ];
